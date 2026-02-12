@@ -1,5 +1,9 @@
 ---
 import Card from "./component1/card.astro"
+import PrimaryButton from '../components/PrimaryButton.astro';
+import Navigation from '../components/Navigation.astro';
+import '../styles/global.css';
+import Layout from '../components/layout.astro';
 ---
 
 <html lang="en">
@@ -14,6 +18,10 @@ import Card from "./component1/card.astro"
 <link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap" rel="stylesheet">
 		<title>Astro</title>
 	</head>
+	<Layout>
+	<header>
+		<Navigation /> 
+	</header>
 	<body>
 		<section>
 		<Card dage="90 dage" h3="Maldiverne" byline="se afgange" image/>
@@ -22,3 +30,4 @@ import Card from "./component1/card.astro"
 		<h1>Astronautisergooooood</h1>
 	</body>
 </html>
+</Layout>
